@@ -1,2 +1,3 @@
-# Introduction
+# Git/GitHub勉強会2018
 
+ITCreateClub主催のGit/GitHub勉強会2018で使用する資料です.
