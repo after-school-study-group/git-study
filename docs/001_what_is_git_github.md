@@ -1,10 +1,13 @@
 # Gitとは
+
+<img src="/img/001_what_is_git_github/001.png" width="200">
+
 Gitはソースコードをリポジトリと呼ばれる１つの塊として変更履歴を記録・追跡できる分散型バージョン管理システムである.  
 元々はLinuxカーネルのソースコードを管理するためにリーナス・トーバルズによって開発された.
 
 ### Gitを使わずに開発するとどうなるか
 
-![](../img/001_what_is_git_github/001.png)
+<img src="/img/001_what_is_git_github/002.png" width="600">
 
 - 様々なバージョンのプロジェクトが散乱し, どれが最新版か分からない
 - コードの変更箇所を簡単に元に戻せない
@@ -19,6 +22,9 @@ Gitが生まれる以前はCVSやSubversionを使ってバージョン管理が�
 <!-- 図 -->
 
 # GitHubとは
+
+<img src="/img/001_what_is_git_github/003.png" width="400">
+
 GitHubはGitのリポジトリをホスティングするためのサービスである.  
 要約すると, 自分がローカル環境で作ったGitリポジトリを簡単にインターネット上で公開できるサービスである.  
-同様のサービスにGitLabやBitBucketなどのサービスもある.
+同様のサービスにGitLabやBitBucketなどもある.
