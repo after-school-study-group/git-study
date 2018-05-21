@@ -1,20 +1,20 @@
 # Gitの初期設定
 Gitにユーザネームとメールアドレスを設定する(初回のみ).
 
-```
+```bash
 $ git config --global user.name "Taro Tanaka"
 $ git config --global user.email "taro@example.com"
 ```
 
 ついでにデフォルトのエディタをVimに設定する(Vimは最高なので).
 
-```
+```bash
 $ git config --global core.editor 'vim - c "set fenc=utf-8"'
 ```
 
 # Gitリポジトリの作成
 
-```
+```bash
 $ mkdir hello-git
 $ cd hello-git
 $ git init

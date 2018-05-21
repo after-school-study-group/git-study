@@ -29,7 +29,7 @@ Debian系ならapt, Red Hat系ならyumでインストールする.
 
 macOSならターミナル, WindowsならGit Bash, Linux/UNIXなら端末を開き, `git --version` と入力する.
 
-```
+```bash
 $ git --version
 git version 2.15.1 (Apple Git-101)
 ```
