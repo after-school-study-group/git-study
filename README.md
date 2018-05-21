@@ -9,3 +9,8 @@ $ git clone https://github.com/tyokinuhata/git-study.git
 $ cd git-study
 $ gitbook serve
 ```
+
+## リンク
+
+[GitHub](https://github.com/tyokinuhata/git-study)
+<!-- TODO: gitbookのリンクを追加 -->
