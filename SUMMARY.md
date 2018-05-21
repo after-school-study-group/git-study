@@ -1,9 +1,9 @@
 # Index
 
 * [Introduction](README.md)
-* [Git/GitHubとは](docs/001_what_is_git_github.md)
-* [GitHubの登録](docs/002_register_github.md)
-* [Gitのインストール](docs/003_install_git.md)
-* [Gitの基本操作](docs/004_git_basic_operation.md)
-* [GitHubの基本操作](docs/005_github_basic_operation.md)
-* [Gitの発展的内容](docs/006_difficult_git.md)
+* [1. Git/GitHubとは](docs/001_what_is_git_github.md)
+* [2. GitHubの登録](docs/002_register_github.md)
+* [3. Gitのインストール](docs/003_install_git.md)
+* [4. Gitの基本操作](docs/004_git_basic_operation.md)
+* [5. GitHubの基本操作](docs/005_github_basic_operation.md)
+* [6. Gitの発展的内容](docs/006_difficult_git.md)
