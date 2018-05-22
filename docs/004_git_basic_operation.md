@@ -57,6 +57,24 @@ $ git add .
 ここで, `.`(ドット)というのは, ワークツリーにあるファイルの変更を全てステージングエリアにステージングするという意味である.  
 ここでは`.`(ドット)を使って全てのファイルをステージングしているが, ファイル名を指定して特定のファイルの変更のみステージングさせることもできる.
 
+ちなみに, 作成, 変更, 削除などを行ったファイルの状態を確認するには, `git status`コマンドを使うと良い.
+
+```bash
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+ステージングされているファイルは'No commits yet'の下に, ステージングされていないファイルは'Untracked files'の下に表示される.
+
 # コミットする
 
 # ブランチとは
