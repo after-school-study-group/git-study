@@ -12,6 +12,12 @@ $ git config --global user.email "taro@example.com"
 $ git config --global core.editor 'vim - c "set fenc=utf-8"'
 ```
 
+また, 必須ではないがログやステータスを表示した際にハイライトされる設定もしておく.
+
+```bash
+$ git config --global color.ui true
+```
+
 # Gitリポジトリの作成
 
 ```bash
