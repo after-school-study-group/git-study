@@ -6,3 +6,4 @@
 * [3. Gitのインストール](docs/003_install_git.md)
 * [4. Gitの基本操作](docs/004_git_basic_operation.md)
 * [5. GitHubの基本操作](docs/005_github_basic_operation.md)
+* [6. さいごに](docs/006_to_close.md)
