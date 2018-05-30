@@ -91,7 +91,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 <!-- 図 -->
 
 ステージングしたファイルはコミットと呼ばれる作業を行い, Gitの変更履歴に記録する必要がある.  
-コミットにするには, `git commit`コマンドを使う.  
+コミットするには, `git commit`コマンドを使う.  
 また, このときに`-m`オプションを付けることによってコミットに対するメッセージを残すことができる.
 
 ```bash
