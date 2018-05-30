@@ -25,24 +25,50 @@ issueの担当者（作業者）はAssigneesで決めることができる.
 
 labelsを使用することでissueのジャンル分けがしやすくなる.
 
-### pushの仕方
+### pushの流れ
+まず、リモートリポジトリをcloneする.cloneとは,既存のリポジトリを複製するための操作.
+urlはCodeタブ内に記載されているのでコピーする.
+
+
 <img src="/img/005_github_basic_operation/007.png" width="600">
+
+コピーしたらターミナルまたはGitBashを開き,任意のディレクトリ内で以下のコマンドを叩く.
 
 ```
 $ git clone https://github.com/takashi0602/hello-github.git
+```
 
+cdコマンドを使用しcloneしたディレクトリに移動する.
+
+```
 $ cd hello-github
+```
 
+pasta.txtを作成する.
+
+```
 $ touch pasta.txt
 
 $ echo パスタを茹でました. > pasta.txt
+```
 
+作成したファイルをステージングする
+
+```
 $ git add .
 
 ($ git status)
+```
 
+コミットする.コミットをする際「close #1」とするとissue #1と紐付けされ.mergeされた時にissueもcloseされる.
+
+```
 $ git commit -m "Initial commit" -m "close #1"
+```
 
+pushする.pushすることでローカルリポジトリの内容がリモートリポジトリに反映させる.
+
+```
 $ git push (origin master)
 ```
 
