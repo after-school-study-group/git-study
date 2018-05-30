@@ -35,19 +35,3 @@ git version 2.15.1 (Apple Git-101)
 ```
 
 のようにGitのバージョン情報が表示されればOK.
-
-# GitのGUIアプリケーション
-
-<img src="/img/003_install_git/001.png" width="300">
-
-基本的にGitはCUIで操作するが, [Sourcetree](https://ja.atlassian.com/software/sourcetree
-)など, GUIで操作するためのアプリケーションも多数用意されている.  
-しかし, Gitの真価を発揮させるためにはCUIのGitを使いこなす必要があるため, 今回はCUIで学習していく.
-
-# GitHubのDesktopアプリケーション
-
-<!-- アイコン -->
-
-Webブラウザ上でも不自由なくGitHubを操作できるが, [GitHub Desktop](https://desktop.github.com/)と呼ばれるGitHubのデスクトップアプリケーションも用意されている.
-
-<!-- アイコン -->

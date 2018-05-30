@@ -15,3 +15,13 @@
 
 ### 上級者向け
 - [Pro Git](https://progit-ja.github.io/)
+
+# GitのGUIアプリケーション
+
+<img src="/img/003_install_git/001.png" width="300">
+
+[Sourcetree](https://ja.atlassian.com/software/sourcetree)など, GUIで操作するためのアプリケーションも多数用意されている(筆者はCUIをオススメする).
+
+# GitHubのDesktopアプリケーション
+
+Webブラウザ上でも不自由なくGitHubを操作できるが, [GitHub Desktop](https://desktop.github.com/)と呼ばれるGitHubのデスクトップアプリケーションも用意されている.
