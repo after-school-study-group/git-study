@@ -1,43 +1,44 @@
-## GitHubの基本操作
-
-### リポジトリ作成
-リポジトリとはファイルやディレクトリの状態を記録する場所だ.
-GitHubではpublicリポジトリとprivateリポジトリを作成できる.今回はフリープランでサインアップしたのでpublicリポジトリしか作成できない.privateリポジトリは有料プランにするか、学生プランにすると作成できるようになる.
+# リポジトリの作成
+GitHubで自分のページに移動し, "New"をクリックする.
 
 <img src="/img/005_github_basic_operation/001.png" width="600">
 
+"Repository name"に任意の名前を入力し(今回の場合は"hello-github"), "Create repository"をクリックする.
+
 <img src="/img/005_github_basic_operation/002.png" width="600">
+
+以下のような画面が出たら成功である.
 
 <img src="/img/005_github_basic_operation/003.png" width="600">
 
-作成したリポジトリはリモートリポジトリといい,複数人で共有するためのリポジトリである.リモートリポジトリを自分のローカル環境にpullしたものをローカルリポジトリといい,作業する時はローカルリポジトリを触る.
+# issueの作成
+issueは日本語で「問題」や「課題」を指す言葉で, プロジェクトで発生したバグや新機能・改善点等の要望をissueとして一元管理することでプロジェクトの見通しを良くするための機能である.
 
-### issue作成
-issueとは,日本語で問題や課題という意味である.issueを作成することでプロジェクトの管理がしやすくなる.
+新たにissueを作成する際は"New issue"をクリックする.
 
 <img src="/img/005_github_basic_operation/004.png" width="600">
 
+そして, issueのタイトルとその説明を記述し, "Submit new issue"をクリックすることでissueが作成される.
+
 <img src="/img/005_github_basic_operation/005.png" width="600">
+
+このとき, 右側にある"Assignees"からissueの担当者を割り当てることができたり, 同じく右側にある"Labels"からissueの分類をすることもできる.
 
 <img src="/img/005_github_basic_operation/006.png" width="600">
 
-issueの担当者（作業者）はAssigneesで決めることができる.
-
-labelsを使用することでissueのジャンル分けがしやすくなる.
-
-### pushの流れ
-まず、リモートリポジトリをcloneする.cloneとは,既存のリポジトリを複製するための操作.
-urlはCodeタブ内に記載されているのでコピーする.
-
+# cloneする
+誰かがGitHubに公開したリポジトリを自分のPCに複製(ダウンロード)することをGitではcloneと呼ぶ.  
+cloneするときは"Clone or Download"をクリックし, URLをコピーする.  
 
 <img src="/img/005_github_basic_operation/007.png" width="600">
 
-コピーしたらターミナルまたはGitBashを開き,任意のディレクトリ内で以下のコマンドを叩く.
+コピーしたら, ターミナルやGitBashで以下のコマンドを入力する.
 
-```
+```bash
 $ git clone https://github.com/takashi0602/hello-github.git
 ```
 
+# pushする
 cdコマンドを使用しcloneしたディレクトリに移動する.
 
 ```
