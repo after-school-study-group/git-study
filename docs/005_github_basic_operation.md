@@ -27,7 +27,7 @@ issueは日本語で「問題」や「課題」を指す言葉で, プロジェ�
 <img src="/img/005_github_basic_operation/006.png" width="600">
 
 # cloneする
-誰かがGitHubに公開したリポジトリを自分のPCに複製(ダウンロード)することをGitではcloneと呼ぶ.  
+誰かがGitHub(など, インターネット上)に公開したリポジトリを自分のPCに複製(ダウンロード)することをGitではcloneと呼ぶ.  
 cloneするときは"Clone or Download"をクリックし, URLをコピーする.  
 
 <img src="/img/005_github_basic_operation/007.png" width="600">
@@ -37,6 +37,8 @@ cloneするときは"Clone or Download"をクリックし, URLをコピーする
 ```bash
 $ git clone https://github.com/takashi0602/hello-github.git
 ```
+
+これでcloneが完了した.
 
 # pushする
 cdコマンドを使用しcloneしたディレクトリに移動する.
