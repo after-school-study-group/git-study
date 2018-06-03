@@ -11,6 +11,82 @@ GitHubで自分のページに移動し, "New"をクリックする.
 
 <img src="/img/005_github_basic_operation/003.png" width="600">
 
+
+# ローカルに追加
+基本作業はローカルリポジトリで行う.ローカルに先ほど作成したリポジトリを追加する.
+
+ターミナルで下記のコマンドを打つとローカルにリポジトリを追加できる.
+
+```
+$ git remote add origin リモートリポジトリのurl
+```
+
+cdコマンドを使用し追加されたディレクトリに移動する.
+
+```
+$ cd hello-github
+```
+
+urlや名前を確認する場合は
+
+```
+$ git remote -v(確認)
+```
+
+これで確認できる.
+
+
+# pushする
+pushすることでローカルリポジトリの内容をリモートリポジトリに反映させることができる.
+
+まず,pasta.txtを作成する.
+
+```
+$ touch pasta.txt
+
+$ echo パスタを茹でました. > pasta.txt
+```
+
+作成したファイルをステージングする.
+
+```
+$ git add .
+
+$ git status(確認)
+```
+
+コミットする.
+
+```
+$ git commit -m "Initial commit" -m "close #1"
+```
+
+pushする.
+
+```
+$ git push (origin master)
+```
+
+<img src="/img/005_github_basic_operation/008.png" width="600">
+
+<img src="/img/005_github_basic_operation/009.png" width="600">
+
+
+# pull
+pullすることでリモートリポジトリの内容をローカルリポジトリに反映させることができる.
+
+(基本GitHub上で作業することはありません.)
+
+GitHub上でpasta.txtの内容を変更する.
+
+
+
+
+
+
+
+
+
 # issueの作成
 issueは日本語で「問題」や「課題」を指す言葉で, プロジェクトで発生したバグや新機能・改善点等の要望をissueとして一元管理することでプロジェクトの見通しを良くするための機能である.
 
@@ -40,44 +116,6 @@ $ git clone https://github.com/takashi0602/hello-github.git
 
 これでcloneが完了した.
 
-# pushする
-cdコマンドを使用しcloneしたディレクトリに移動する.
-
-```
-$ cd hello-github
-```
-
-pasta.txtを作成する.
-
-```
-$ touch pasta.txt
-
-$ echo パスタを茹でました. > pasta.txt
-```
-
-作成したファイルをステージングする.
-
-```
-$ git add .
-
-($ git status)
-```
-
-コミットする.コミットをする際「close #1」とするとissue #1と紐付けされ.mergeされた時にissueもcloseされる.
-
-```
-$ git commit -m "Initial commit" -m "close #1"
-```
-
-pushする.pushすることでローカルリポジトリの内容がリモートリポジトリに反映させる.
-
-```
-$ git push (origin master)
-```
-
-<img src="/img/005_github_basic_operation/008.png" width="600">
-
-<img src="/img/005_github_basic_operation/009.png" width="600">
 
 ### forkの仕方
 forkとは,既存のpublicリポジトリの複製を自分のGitHub内に作成することである.
