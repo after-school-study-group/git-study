@@ -3,7 +3,7 @@ GitHubで自分のページに移動し, "New"をクリックする.
 
 <img src="/img/005_github_basic_operation/001.png" width="600">
 
-"Repository name"に任意の名前を入力し(今回の場合は"hello-github"), "Create repository"をクリックする.
+"Repository name"に任意の名前を入力し(今回の場合は"hello-git"), "Create repository"をクリックする.
 
 <img src="/img/005_github_basic_operation/002.png" width="600">
 
@@ -11,63 +11,41 @@ GitHubで自分のページに移動し, "New"をクリックする.
 
 <img src="/img/005_github_basic_operation/003.png" width="600">
 
+# ローカルリポジトリに追加
 
-# ローカルに追加
-基本作業はローカルリポジトリで行う.ローカルに先ほど作成したリポジトリを追加する.
+// TODO: リモートリポジトリのリンクをコピーする作業
 
-ターミナルで下記のコマンドを打つとローカルにリポジトリを追加できる.
+基本的にファイル作成・編集・削除などの作業はローカルリポジトリで行う.  
+その変更内容をリモートリポジトリに反映させるには, ローカルリポジトリに対してリモートリポジトリへの参照を追加する必要がある.  
+要約すると, ローカルリポジトリに先ほど作成したリモートリポジトリのURLを追加するということである.
 
-```
-$ git remote add origin リモートリポジトリのurl
-```
+ターミナルで下記のコマンドを実行すると, ローカルリポジトリに対してリモートリポジトリが"origin"という名前で登録される.  
+ちなみに, "origin"以外の名前を付けても良いが, 慣習的に"origin"と付けられることが多い.
 
-cdコマンドを使用し追加されたディレクトリに移動する.
-
-```
-$ cd hello-github
-```
-
-urlや名前を確認する場合は
-
-```
-$ git remote -v(確認)
+```bash
+$ git remote add origin <リモートリポジトリのURL>
 ```
 
-これで確認できる.
+ローカルリポジトリに登録されているリモートリポジトリの名前やそれに対応するURLを確認する場合は,
 
+```bash
+$ git remote -v
+```
+
+とコマンドを入力し, 実行する.
+
+実行した結果
+
+<img src="/img/005_github_basic_operation/024.png" width="600">
 
 # pushする
-pushすることでローカルリポジトリの内容をリモートリポジトリに反映させることができる.
+pushと呼ばれる操作を行うことで, ローカルリポジトリの変更内容をリモートリポジトリに反映させることができる.
 
-まず,pasta.txtを作成する.
-
-```
-$ touch pasta.txt
-
-$ echo パスタを茹でました. > pasta.txt
-```
-
-作成したファイルをステージングする.
-
-```
-$ git add .
-
-$ git status(確認)
-```
-
-コミットする.
-
-```
-$ git commit -m "Initial commit"
-```
-
-pushする.
-
-```
+```bash
 $ git push (origin master)
 ```
 
-<img src="/img/005_github_basic_operation/008.png" width="600">
+<img src="/img/005_github_basic_operation/025.png" width="600">
 
 
 # pull
@@ -91,24 +69,9 @@ GitHub上でpasta.txtの内容を変更する.
 
 変更された内容をpullしてローカルリポジトリにも反映させる.
 
-```
+```bash
 $ git pull (upstream master)
 ```
-
-
-# cloneする
-誰かがGitHub(など, インターネット上)に公開したリポジトリを自分のPCに複製(ダウンロード)することをGitではcloneと呼ぶ.  
-cloneするときは"Clone or Download"をクリックし, URLをコピーする.  
-
-<img src="/img/005_github_basic_operation/007.png" width="600">
-
-コピーしたら, ターミナルやGitBashで以下のコマンドを入力する.
-
-```bash
-$ git clone https://github.com/takashi0602/hello-github.git
-```
-
-これでcloneが完了した.
 
 
 ### forkの仕方
@@ -126,23 +89,82 @@ forkが終わると左上のところに「forked from takashi0602/hello-github�
 <img src="/img/005_github_basic_operation/011.png" width="600">
 
 
-### プルリク作成
+# cloneする
+誰かがGitHub(など, インターネット上)に公開したリポジトリを自分のPCに複製(ダウンロード)することをGitではcloneと呼ぶ.  
+cloneするときは"Clone or Download"をクリックし, URLをコピーする.  
+
+<img src="/img/005_github_basic_operation/007.png" width="600">
+
+コピーしたら, ターミナルやGitBashで以下のコマンドを入力する.
+
+```bash
+$ git clone https://github.com/ユーザ名/hello-github.git
+```
+
+これでcloneが完了した.
+
+
+### pull requestの作成
+pull requestはローカルリポジトリでの変更を他の開発者に通知すること.
+
+先ほどcloneしたリポジトリに移動する.
+
+```bash
+$ cd hello-github
+```
+
+リポジトリの内容を変更し,pushまでする
+
+'''bash
+$ touch 学籍番号.txt
+
+$ git add .
+
+$ git commit -m "add 学籍番号.txt"
+
+$ git push (origin master)
+```
+
+次にGitHubに移動しpull requestを作成する.
+
+まず,Pull requestsタブを選択し,New pull requestボタンを押す.
+
 <img src="/img/005_github_basic_operation/012.png" width="600">
+
+次に,Create pull requestボタンを押す.
 
 <img src="/img/005_github_basic_operation/013.png" width="600">
 
+すると,pushした内容やコミットメッセージの修正などができるようになる.
+そして右下にあるCreate pull requestを押す.
+
 <img src="/img/005_github_basic_operation/014.png" width="600">
+
+そうすると,pull requestが作成される.
 
 <img src="/img/005_github_basic_operation/015.png" width="600">
 
+
 ### mergeのやり方
+mergeはpull requestの内容をリモートリポジトリに反映させるために使用する.
+
+まず,pull request画面から先ほどのpull requestを選択.そして,Merge pull requestボタンを押す.
+
 <img src="/img/005_github_basic_operation/016.png" width="600">
+
+押すと変更点などが分かる.
 
 <img src="/img/005_github_basic_operation/017.png" width="600">
 
+メッセージを記入する.Confirm mergeボタンを押すと,mergeされる.
+
 <img src="/img/005_github_basic_operation/018.png" width="600">
 
+pull requestがOpenからMergedに変更したのが分かる.
+
 <img src="/img/005_github_basic_operation/019.png" width="600">
+
+
 
 
 # issueの作成
