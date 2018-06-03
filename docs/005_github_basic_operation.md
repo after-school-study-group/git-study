@@ -115,7 +115,7 @@ $ cd hello-github
 
 リポジトリの内容を変更し,pushまでする
 
-'''bash
+```bash
 $ touch 学籍番号.txt
 
 $ git add .
@@ -183,5 +183,26 @@ issueは日本語で「問題」や「課題」を指す言葉で, プロジェ�
 <img src="/img/005_github_basic_operation/006.png" width="600">
 
 
-### コントリビュート
+# contribution
+contributionはGitHubでの活動が可視化される.コミットしたりissueを立てたりすることで色がつく.
+
 <img src="/img/005_github_basic_operation/020.png" width="600">
+
+# .gitignore
+.gitignoreを使用することで,ファイルやディレクトリをステージングエリアにステージングすることを防ぐ.
+
+例えば,hoge.txtを作成する.
+
+```bash
+$ touch hoge.txt
+```
+
+.gitignoreを作成する.
+
+```bash
+$ touch .gitignore
+
+$ echo hoge.txt > .gitignore
+```
+
+こうすることで```$ git add .```を実行してもhoge.txtはステージングエリアにステージングされない.
