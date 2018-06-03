@@ -48,7 +48,7 @@ $ git push (origin master)
 <img src="/img/005_github_basic_operation/025.png" width="600">
 
 
-# pull
+# pullする
 pullすることでリモートリポジトリの内容をローカルリポジトリに反映させることができる.
 
 (基本GitHub上で作業することはありません.)
@@ -113,9 +113,9 @@ pull requestはローカルリポジトリでの変更を他の開発者に通�
 $ cd hello-github
 ```
 
-リポジトリの内容を変更し,pushまでする
+リポジトリの内容を変更し,pushする.
 
-'''bash
+```bash
 $ touch 学籍番号.txt
 
 $ git add .
