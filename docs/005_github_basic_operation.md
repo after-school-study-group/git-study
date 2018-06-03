@@ -58,7 +58,7 @@ $ git status(確認)
 コミットする.
 
 ```
-$ git commit -m "Initial commit" -m "close #1"
+$ git commit -m "Initial commit"
 ```
 
 pushする.
@@ -69,8 +69,6 @@ $ git push (origin master)
 
 <img src="/img/005_github_basic_operation/008.png" width="600">
 
-<img src="/img/005_github_basic_operation/009.png" width="600">
-
 
 # pull
 pullすることでリモートリポジトリの内容をローカルリポジトリに反映させることができる.
@@ -79,28 +77,24 @@ pullすることでリモートリポジトリの内容をローカルリポジ�
 
 GitHub上でpasta.txtの内容を変更する.
 
+まず,pasta.txtを選択する.そして画面右側にある鉛筆のアイコンを選択し,ファイルを編集する.
 
+<img src="/img/005_github_basic_operation/021.png" width="600">
 
+今回は「パスタを食べました.」と入力する.
 
+<img src="/img/005_github_basic_operation/022.png" width="600">
 
+画面上でコミットを作成する.Commit changesボタンを押すと変更が反映される.
 
+<img src="/img/005_github_basic_operation/023.png" width="600">
 
+変更された内容をpullしてローカルリポジトリにも反映させる.
 
+```
+$ git pull (upstream master)
+```
 
-# issueの作成
-issueは日本語で「問題」や「課題」を指す言葉で, プロジェクトで発生したバグや新機能・改善点等の要望をissueとして一元管理することでプロジェクトの見通しを良くするための機能である.
-
-新たにissueを作成する際は"New issue"をクリックする.
-
-<img src="/img/005_github_basic_operation/004.png" width="600">
-
-そして, issueのタイトルとその説明を記述し, "Submit new issue"をクリックすることでissueが作成される.
-
-<img src="/img/005_github_basic_operation/005.png" width="600">
-
-このとき, 右側にある"Assignees"からissueの担当者を割り当てることができたり, 同じく右側にある"Labels"からissueの分類をすることもできる.
-
-<img src="/img/005_github_basic_operation/006.png" width="600">
 
 # cloneする
 誰かがGitHub(など, インターネット上)に公開したリポジトリを自分のPCに複製(ダウンロード)することをGitではcloneと呼ぶ.  
@@ -131,6 +125,7 @@ forkが終わると左上のところに「forked from takashi0602/hello-github�
 
 <img src="/img/005_github_basic_operation/011.png" width="600">
 
+
 ### プルリク作成
 <img src="/img/005_github_basic_operation/012.png" width="600">
 
@@ -148,6 +143,23 @@ forkが終わると左上のところに「forked from takashi0602/hello-github�
 <img src="/img/005_github_basic_operation/018.png" width="600">
 
 <img src="/img/005_github_basic_operation/019.png" width="600">
+
+
+# issueの作成
+issueは日本語で「問題」や「課題」を指す言葉で, プロジェクトで発生したバグや新機能・改善点等の要望をissueとして一元管理することでプロジェクトの見通しを良くするための機能である.
+
+新たにissueを作成する際は"New issue"をクリックする.
+
+<img src="/img/005_github_basic_operation/004.png" width="600">
+
+そして, issueのタイトルとその説明を記述し, "Submit new issue"をクリックすることでissueが作成される.
+
+<img src="/img/005_github_basic_operation/005.png" width="600">
+
+このとき, 右側にある"Assignees"からissueの担当者を割り当てることができたり, 同じく右側にある"Labels"からissueの分類をすることもできる.
+
+<img src="/img/005_github_basic_operation/006.png" width="600">
+
 
 ### コントリビュート
 <img src="/img/005_github_basic_operation/020.png" width="600">
