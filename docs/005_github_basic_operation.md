@@ -72,7 +72,7 @@ $ git push (origin master)
 <img src="/img/005_github_basic_operation/009.png" width="600">
 
 
-# pull
+# pullする
 pullすることでリモートリポジトリの内容をローカルリポジトリに反映させることができる.
 
 (基本GitHub上で作業することはありません.)
@@ -117,7 +117,7 @@ $ git clone https://github.com/takashi0602/hello-github.git
 これでcloneが完了した.
 
 
-### forkの仕方
+### forkする
 forkとは,既存のpublicリポジトリの複製を自分のGitHub内に作成することである.
 
 今回はhello-githubのリポジトリをforkする.
@@ -125,7 +125,7 @@ url：https://github.com/takashi0602/hello-github
 
 右上にForkボタンがあるのでそれを押下する.
 
-<img src="/img/005_github_basic_operation/010.png" width="600">
+<img src="/img/005_github_basic_operation/010.png" width="350">
 
 forkが終わると左上のところに「forked from takashi0602/hello-github」とfork元が記載される.
 
