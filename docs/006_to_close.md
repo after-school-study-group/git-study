@@ -2,7 +2,13 @@
 ここまでいくつかのGitコマンドを解説してきたが, これらのコマンドはほんの一部に過ぎず, 他にも様々なコマンドが存在する.  
 ここからのステップアップとしていくつかのコマンドを紹介しておく.
 
-<!-- TODO: コマンド一覧 -->
+- git tag
+- git rm
+- git reset
+- git revert
+- git stash
+- git cherry-pick
+- git rebase
 
 # Git/GitHubを勉強できるサイトの紹介
 

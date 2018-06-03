@@ -32,30 +32,33 @@ $ git remote add origin <リモートリポジトリのURL>
 $ git remote -v
 ```
 
-とコマンドを入力し, 実行する.
+とコマンドを入力し, 実行する.  
+実行結果が以下のようになれば成功である.
 
-実行した結果
-
-<img src="/img/005_github_basic_operation/024.png" width="600">
+// TODO: git remote -vの実行結果を表示(画像ではなく文字で)
 
 # pushする
-pushと呼ばれる操作を行うことで, ローカルリポジトリの変更内容をリモートリポジトリに反映させることができる.
+pushと呼ばれる操作を行うことで, ローカルリポジトリの変更内容をリモートリポジトリに反映させることができる.  
+先程作成した`hello.txt`はコミットまでされているので, これをpushしてみよう.
 
 ```bash
-$ git push (origin master)
+$ git push origin master
 ```
+
+// TODO: pushしたときに実行結果
+
+GitHub上でリポジトリを確認すると, hello.txtが反映されていることが分かる.
 
 <img src="/img/005_github_basic_operation/025.png" width="600">
 
+# pullする
+pullと呼ばれる操作を行うことで, リモートリポジトリでの変更内容ををローカルリポジトリに反映させることができる.
 
-# pull
-pullすることでリモートリポジトリの内容をローカルリポジトリに反映させることができる.
+// TODO: ファイル名をpasta.txt -> hello.txtに変更するため, ここらへんは全体的に修正が入ります.
 
-(基本GitHub上で作業することはありません.)
+基本的にGitHub上で作業することは無いが, 今回は擬似的にリモートリポジトリで変更があった状況を作り出すため, GitHub上で直接`pasta.txt`の内容を変更する.
 
-GitHub上でpasta.txtの内容を変更する.
-
-まず,pasta.txtを選択する.そして画面右側にある鉛筆のアイコンを選択し,ファイルを編集する.
+`pasta.txt`を開き, 画面右側にある鉛筆のアイコンを選択し, ファイルを編集する.
 
 <img src="/img/005_github_basic_operation/021.png" width="600">
 
@@ -63,31 +66,30 @@ GitHub上でpasta.txtの内容を変更する.
 
 <img src="/img/005_github_basic_operation/022.png" width="600">
 
-画面上でコミットを作成する.Commit changesボタンを押すと変更が反映される.
+画面上でコミットを作成する.  
+"Commit changes"ボタンをクリックすると変更が確定される.
 
 <img src="/img/005_github_basic_operation/023.png" width="600">
 
 変更された内容をpullしてローカルリポジトリにも反映させる.
 
 ```bash
-$ git pull (upstream master)
+$ git pull origin master
 ```
 
+# forkする
+誰かがGitHub上に公開しているリポジトリを自分のGitHub上に複製することをforkと呼ぶ.
 
-### forkの仕方
-forkとは,既存のpublicリポジトリの複製を自分のGitHub内に作成することである.
+今回は[hello-github](https://github.com/takashi0602/hello-github)をforkする.  
+右上にある"Fork"ボタンをクリックする.
 
-今回はhello-githubのリポジトリをforkする.
-url：https://github.com/takashi0602/hello-github
+<img src="/img/005_github_basic_operation/010.png" width="300">
 
-右上にForkボタンがあるのでそれを押下する.
+// TODO: fork画像追加
 
-<img src="/img/005_github_basic_operation/010.png" width="600">
-
-forkが終わると左上のところに「forked from takashi0602/hello-github」とfork元が記載される.
+forkが完了すると左上に"forked from takashi0602/hello-github"とfork元リポジトリが記載される.
 
 <img src="/img/005_github_basic_operation/011.png" width="600">
-
 
 # cloneする
 誰かがGitHub(など, インターネット上)に公開したリポジトリを自分のPCに複製(ダウンロード)することをGitではcloneと呼ぶ.  
@@ -103,40 +105,36 @@ $ git clone https://github.com/ユーザ名/hello-github.git
 
 これでcloneが完了した.
 
+# Pull Requestの作成
+Pull Requestは自分のローカルリポジトリでの変更をコミットし, リモートリポジトリにpush後, その変更をfork元のリポジトリに取り込んでもらいたい時に使う機能である.  
+プルリクやPRと省略されて呼ばれることが多い.
 
-### pull requestの作成
-pull requestはローカルリポジトリでの変更を他の開発者に通知すること.
-
-先ほどcloneしたリポジトリに移動する.
+まずは先程cloneしたリポジトリに移動する.
 
 ```bash
 $ cd hello-github
 ```
 
-リポジトリの内容を変更し,pushまでする
+コミットするにはリポジトリに変更を加える必要があるため, 今回は`学籍番号.txt`(例: `B7233.txt`)という名前のファイルを作成する.  
+その後, ステージングとコミットを行い, pushする.
 
 ```bash
-$ touch 学籍番号.txt
-
+$ touch B7233.txt
 $ git add .
-
-$ git commit -m "add 学籍番号.txt"
-
-$ git push (origin master)
+$ git commit -m "add B7233.txt"
+$ git push origin master
 ```
 
-次にGitHubに移動しpull requestを作成する.
-
-まず,Pull requestsタブを選択し,New pull requestボタンを押す.
+ここからが本題で, いよいよPull Requestを作成する段階に入る.  
+GitHubに移動し, "Pull requests"タブを選択し, "New pull request"ボタンをクリックする.
 
 <img src="/img/005_github_basic_operation/012.png" width="600">
 
-次に,Create pull requestボタンを押す.
+次に, "Create pull request"ボタンをクリックする.
 
 <img src="/img/005_github_basic_operation/013.png" width="600">
 
-すると,pushした内容やコミットメッセージの修正などができるようになる.
-そして右下にあるCreate pull requestを押す.
+すると, Pull Requestの作成画面が出るので, Pull Requestのタイトルとその説明を適当に入力し, 右下にある"Create pull request"をクリックする.
 
 <img src="/img/005_github_basic_operation/014.png" width="600">
 
@@ -144,28 +142,23 @@ $ git push (origin master)
 
 <img src="/img/005_github_basic_operation/015.png" width="600">
 
+# mergeする
+mergeはPull Requestの内容をリモートリポジトリに反映させるために使用する機能である.
 
-### mergeのやり方
-mergeはpull requestの内容をリモートリポジトリに反映させるために使用する.
-
-まず,pull request画面から先ほどのpull requestを選択.そして,Merge pull requestボタンを押す.
+まず, "Pull Requests"タブを選択肢, mergeしたいPull Requestを選択する.  
+そして, "Merge pull request"ボタンをクリックすると, そのPull Requestによるファイルの変更点などが表示される.
 
 <img src="/img/005_github_basic_operation/016.png" width="600">
 
-押すと変更点などが分かる.
-
 <img src="/img/005_github_basic_operation/017.png" width="600">
 
-メッセージを記入する.Confirm mergeボタンを押すと,mergeされる.
+適当なメッセージを入力し, "Confirm merge"ボタンをクリックすると, mergeが完了する.
 
 <img src="/img/005_github_basic_operation/018.png" width="600">
 
-pull requestがOpenからMergedに変更したのが分かる.
+また, mergeが完了すると, Pull Requestの状態が"Open"から"Merged"に変更され, 色調も緑色から紫色に変更される.
 
 <img src="/img/005_github_basic_operation/019.png" width="600">
-
-
-
 
 # issueの作成
 issueは日本語で「問題」や「課題」を指す言葉で, プロジェクトで発生したバグや新機能・改善点等の要望をissueとして一元管理することでプロジェクトの見通しを良くするための機能である.
