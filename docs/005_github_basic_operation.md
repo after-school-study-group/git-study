@@ -3,7 +3,7 @@ GitHubで自分のページに移動し, "New"をクリックする.
 
 <img src="/img/005_github_basic_operation/001.png" width="600">
 
-"Repository name"に任意の名前を入力し(今回の場合は"hello-github"), "Create repository"をクリックする.
+"Repository name"に任意の名前を入力し(今回の場合は"hello-git"), "Create repository"をクリックする.
 
 <img src="/img/005_github_basic_operation/002.png" width="600">
 
@@ -11,37 +11,37 @@ GitHubで自分のページに移動し, "New"をクリックする.
 
 <img src="/img/005_github_basic_operation/003.png" width="600">
 
+# ローカルリポジトリに追加
 
-# ローカルに追加
-基本作業はローカルリポジトリで行う.ローカルに先ほど作成したリポジトリを追加する.
+// TODO: リモートリポジトリのリンクをコピーする作業
 
-ターミナルで下記のコマンドを打つとローカルにリポジトリを追加できる.
+基本的にファイル作成・編集・削除などの作業はローカルリポジトリで行う.  
+その変更内容をリモートリポジトリに反映させるには, ローカルリポジトリに対してリモートリポジトリへの参照を追加する必要がある.  
+要約すると, ローカルリポジトリに先ほど作成したリモートリポジトリのURLを追加するということである.
 
-```
-$ git remote add origin リモートリポジトリのurl
-```
+ターミナルで下記のコマンドを実行すると, ローカルリポジトリに対してリモートリポジトリが"origin"という名前で登録される.  
+ちなみに, "origin"以外の名前を付けても良いが, 慣習的に"origin"と付けられることが多い.
 
-cdコマンドを使用し追加されたディレクトリに移動する.
-
-```
-$ cd hello-github
-```
-
-urlや名前を確認する場合は
-
-```
-$ git remote -v(確認)
+```bash
+$ git remote add origin <リモートリポジトリのURL>
 ```
 
-これで確認できる.
+ローカルリポジトリに登録されているリモートリポジトリの名前やそれに対応するURLを確認する場合は,
 
+```bash
+$ git remote -v
+```
+
+とコマンドを入力し, 実行する.
+
+// TODO: git remote -v コマンドの実行結果を貼り付けてほしい
 
 # pushする
-pushすることでローカルリポジトリの内容をリモートリポジトリに反映させることができる.
+pushと呼ばれる操作を行うことで, ローカルリポジトリの変更内容をリモートリポジトリに反映させることができる.
 
 まず,pasta.txtを作成する.
 
-```
+```bash
 $ touch pasta.txt
 
 $ echo パスタを茹でました. > pasta.txt
@@ -49,7 +49,7 @@ $ echo パスタを茹でました. > pasta.txt
 
 作成したファイルをステージングする.
 
-```
+```bash
 $ git add .
 
 $ git status(確認)
@@ -57,13 +57,13 @@ $ git status(確認)
 
 コミットする.
 
-```
+```bash
 $ git commit -m "Initial commit" -m "close #1"
 ```
 
 pushする.
 
-```
+```bash
 $ git push (origin master)
 ```
 
