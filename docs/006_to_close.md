@@ -24,7 +24,7 @@
 
 # GitのGUIアプリケーション
 
-<img src="/img/003_install_git/001.png" width="300">
+<img src="../img/003_install_git/001.png" width="300">
 
 [Sourcetree](https://ja.atlassian.com/software/sourcetree)など, GUIで操作するためのアプリケーションも多数用意されている(筆者はCUIをオススメする).
 
