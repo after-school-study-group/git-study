@@ -13,8 +13,6 @@ GitHubで自分のページに移動し, "New"をクリックする.
 
 # ローカルリポジトリに追加
 
-// TODO: リモートリポジトリのリンクをコピーする作業
-
 基本的にファイル作成・編集・削除などの作業はローカルリポジトリで行う.  
 その変更内容をリモートリポジトリに反映させるには, ローカルリポジトリに対してリモートリポジトリへの参照を追加する必要がある.  
 要約すると, ローカルリポジトリに先ほど作成したリモートリポジトリのURLを追加するということである.
@@ -26,6 +24,8 @@ GitHubで自分のページに移動し, "New"をクリックする.
 $ git remote add origin <リモートリポジトリのURL>
 ```
 
+上記のリモートリポジトリのURLは,GitHubのCode画面の右側にあるClone or downloadボタンからコピーすることができる.
+
 ローカルリポジトリに登録されているリモートリポジトリの名前やそれに対応するURLを確認する場合は,
 
 ```bash
@@ -35,7 +35,10 @@ $ git remote -v
 とコマンドを入力し, 実行する.  
 実行結果が以下のようになれば成功である.
 
-// TODO: git remote -vの実行結果を表示(画像ではなく文字で)
+```bash
+origin	https://github.com/takashi0602/hello-git.git (fetch)
+origin	https://github.com/takashi0602/hello-git.git (push)
+```
 
 # pushする
 pushと呼ばれる操作を行うことで, ローカルリポジトリの変更内容をリモートリポジトリに反映させることができる.  
@@ -45,7 +48,15 @@ pushと呼ばれる操作を行うことで, ローカルリポジトリの変�
 $ git push origin master
 ```
 
-// TODO: pushしたときに実行結果
+以下のような実行結果が表示されれば成功である.
+
+```bash
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 244 bytes | 244.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/takashi0602/hello-git.git
+   9678fb4..52e8275  master -> master
+```
 
 GitHub上でリポジトリを確認すると, hello.txtが反映されていることが分かる.
 
