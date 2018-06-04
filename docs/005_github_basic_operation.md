@@ -175,27 +175,18 @@ issueは日本語で「問題」や「課題」を指す言葉で, プロジェ�
 
 <img src="/img/005_github_basic_operation/006.png" width="600">
 
-
-# contribution
-contributionはGitHubでの活動が可視化される.コミットしたりissueを立てたりすることで色がつく.
-
-<img src="/img/005_github_basic_operation/020.png" width="600">
-
 # .gitignore
-.gitignoreを使用することで,ファイルやディレクトリをステージングエリアにステージングすることを防ぐ.
+`.DS_Store`や`Thumbs.db`といったファイルシステムによって自動生成されるファイルや, `node_modules`のようなモジュール, `.vscode`や`.idea`のようなエディタが生成するファイルはGitの監視下に置く必要は無い.  
+そのようなファイルやディレクトリを.gitignoreに記述することで, Gitの監視下から除外される.
 
-例えば,hoge.txtを作成する.
+例えば, hoge.txtをGitの監視下から除外したい場合,
 
 ```bash
 $ touch hoge.txt
-```
-
-.gitignoreを作成する.
-
-```bash
 $ touch .gitignore
-
 $ echo hoge.txt > .gitignore
 ```
 
-こうすることで```$ git add .```を実行してもhoge.txtはステージングエリアにステージングされない.
+とすることで`$ git add .`を実行してもhoge.txtはステージングエリアにステージングされない.
+
+// git add .をしてもステージングされていないことを示す実行結果を載せる
