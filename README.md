@@ -10,6 +10,12 @@ $ cd git-study
 $ gitbook serve
 ```
 
+## ビルド
+
+```
+$ make build
+```
+
 ## リンク
 
 [GitHub](https://github.com/tyokinuhata/git-study)
