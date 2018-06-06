@@ -20,43 +20,39 @@ GitHubで自分のページに移動し, "New"をクリックする.
 ターミナルで下記のコマンドを実行すると, ローカルリポジトリに対してリモートリポジトリが"origin"という名前で登録される.  
 ちなみに, "origin"以外の名前を付けても良いが, 慣習的に"origin"と付けられることが多い.
 
+リモートリポジトリのURLは,GitHubのCode画面の右側にあるClone or downloadボタンからコピーすることができる.
+
+<img src="../img/005_github_basic_operation/029.png" width="600">
+
 ```bash
 $ git remote add origin <リモートリポジトリのURL>
 ```
-
-上記のリモートリポジトリのURLは,GitHubのCode画面の右側にあるClone or downloadボタンからコピーすることができる.
 
 ローカルリポジトリに登録されているリモートリポジトリの名前やそれに対応するURLを確認する場合は,
 
 ```bash
 $ git remote -v
+origin https://github.com/takashi0602/hello-git.git (fetch)
+origin https://github.com/takashi0602/hello-git.git (push)
 ```
 
 とコマンドを入力し, 実行する.  
-実行結果が以下のようになれば成功である.
-
-```bash
-origin	https://github.com/takashi0602/hello-git.git (fetch)
-origin	https://github.com/takashi0602/hello-git.git (push)
-```
+実行結果が上記のようになれば成功である.
 
 # pushする
 pushと呼ばれる操作を行うことで, ローカルリポジトリの変更内容をリモートリポジトリに反映させることができる.  
-先程作成した`hello.txt`はコミットまでされているので, これをpushしてみよう.
+先程作成した`hello.txt`はコミットまでされているので, これをpushする.
 
 ```bash
 $ git push origin master
-```
-
-以下のような実行結果が表示されれば成功である.
-
-```bash
 Counting objects: 3, done.
 Writing objects: 100% (3/3), 244 bytes | 244.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/takashi0602/hello-git.git
    9678fb4..52e8275  master -> master
 ```
+
+上記のような実行結果が表示されれば成功である.
 
 GitHub上でリポジトリを確認すると, hello.txtが反映されていることが分かる.
 
