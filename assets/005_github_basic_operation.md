@@ -13,11 +13,13 @@ GitHubで自分のページに移動し, "New"をクリックする.
 
 # ローカルリポジトリに追加
 
-// TODO: リモートリポジトリのリンクをコピーする作業
+まずはGitHubｂにて, リモートリポジトリのURLをコピーする.  
+リポジトリの画面の右側にある"Clone or download"を押し, コピーする.
 
-基本的にファイル作成・編集・削除などの作業はローカルリポジトリで行う.  
-その変更内容をリモートリポジトリに反映させるには, ローカルリポジトリに対してリモートリポジトリへの参照を追加する必要がある.  
-要約すると, ローカルリポジトリに先ほど作成したリモートリポジトリのURLを追加するということである.
+<img src="../img/005_github_basic_operation/029.png" width="600">
+
+次に, ローカルリポジトリにリモートリポジトリを追加する.  
+これにより, 後述するpushやpullなどの作業を簡単に行えるようになる.
 
 ターミナルで下記のコマンドを実行すると, ローカルリポジトリに対してリモートリポジトリが"origin"という名前で登録される.  
 ちなみに, "origin"以外の名前を付けても良いが, 慣習的に"origin"と付けられることが多い.
@@ -30,22 +32,27 @@ $ git remote add origin <リモートリポジトリのURL>
 
 ```bash
 $ git remote -v
+origin https://github.com/takashi0602/hello-git.git (fetch)
+origin https://github.com/takashi0602/hello-git.git (push)
 ```
 
 とコマンドを入力し, 実行する.  
-実行結果が以下のようになれば成功である.
-
-// TODO: git remote -vの実行結果を表示(画像ではなく文字で)
+実行結果が上記のようになれば成功である.
 
 # pushする
 pushと呼ばれる操作を行うことで, ローカルリポジトリの変更内容をリモートリポジトリに反映させることができる.  
-先程作成した`hello.txt`はコミットまでされているので, これをpushしてみよう.
+先程作成した`hello.txt`はコミットまでされているので, 次はこれをpushする.
 
 ```bash
 $ git push origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 244 bytes | 244.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/takashi0602/hello-git.git
+   9678fb4..52e8275  master -> master
 ```
 
-// TODO: pushしたときに実行結果
+上記のような実行結果が表示されれば成功である.
 
 GitHub上でリポジトリを確認すると, hello.txtが反映されていることが分かる.
 
