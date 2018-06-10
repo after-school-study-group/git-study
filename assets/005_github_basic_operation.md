@@ -100,11 +100,15 @@ Fast-forward
 
 <img src="../img/005_github_basic_operation/010.png" width="300">
 
-// TODO: fork画像追加
+forkするユーザを選択する.
+
+<img src="../img/005_github_basic_operation/026.png" width="600">
+
+<img src="../img/005_github_basic_operation/027.png" width="600">
 
 forkが完了すると左上に"forked from takashi0602/hello-github"とfork元リポジトリが記載される.
 
-<img src="../img/005_github_basic_operation/011.png" width="600">
+<img src="../img/005_github_basic_operation/028.png" width="600">
 
 # cloneする
 誰かがGitHub(など, インターネット上)に公開したリポジトリを自分のPCに複製(ダウンロード)することをGitではcloneと呼ぶ.  
