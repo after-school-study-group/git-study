@@ -61,27 +61,35 @@ GitHub上でリポジトリを確認すると, hello.txtが反映されている
 # pullする
 pullと呼ばれる操作を行うことで, リモートリポジトリでの変更内容ををローカルリポジトリに反映させることができる.
 
-// TODO: ファイル名をpasta.txt -> hello.txtに変更するため, ここらへんは全体的に修正が入ります.
+基本的にGitHub上で作業することは無いが, 今回は擬似的にリモートリポジトリで変更があった状況を作り出すため, GitHub上で直接`hello.txt`の内容を変更する.
 
-基本的にGitHub上で作業することは無いが, 今回は擬似的にリモートリポジトリで変更があった状況を作り出すため, GitHub上で直接`pasta.txt`の内容を変更する.
+`hello.txt`を開き, 画面右側にある鉛筆のアイコンを選択し, ファイルを編集する.
 
-`pasta.txt`を開き, 画面右側にある鉛筆のアイコンを選択し, ファイルを編集する.
+<img src="../img/005_github_basic_operation/030.png" width="600">
 
-<img src="../img/005_github_basic_operation/021.png" width="600">
+今回は`hello, github!!!`と入力する.
 
-今回は「パスタを食べました.」と入力する.
-
-<img src="../img/005_github_basic_operation/022.png" width="600">
+<img src="../img/005_github_basic_operation/031.png" width="600">
 
 画面上でコミットを作成する.  
 "Commit changes"ボタンをクリックすると変更が確定される.
 
-<img src="../img/005_github_basic_operation/023.png" width="600">
+<img src="../img/005_github_basic_operation/032.png" width="600">
 
 変更された内容をpullしてローカルリポジトリにも反映させる.
 
 ```bash
 $ git pull origin master
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/takashi0602/hello-git
+ * branch            master     -> FETCH_HEAD
+   52e8275..4acdde3  master     -> origin/master
+Updating 52e8275..4acdde3
+Fast-forward
+ hello.txt | 1 +
+ 1 file changed, 1 insertion(+)
 ```
 
 # forkする
