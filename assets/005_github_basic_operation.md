@@ -186,14 +186,30 @@ issueは日本語で「問題」や「課題」を指す言葉で, プロジェ�
 `.DS_Store`や`Thumbs.db`といったファイルシステムによって自動生成されるファイルや, `node_modules`のようなモジュール, `.vscode`や`.idea`のようなエディタが生成するファイルはGitの監視下に置く必要は無い.  
 そのようなファイルやディレクトリを.gitignoreに記述することで, Gitの監視下から除外される.
 
-例えば, hoge.txtをGitの監視下から除外したい場合,
+例えば, hoge.txtをGitの監視下から除外したい場合, まず.gitignoreファイルを作成する.
 
 ```bash
 $ touch hoge.txt
 $ touch .gitignore
+```
+
+次に.gitignoreファイルに`hoge.txt`と書き込む. 書き込む時に`echo`コマンドを使用する.  
+`echo`コマンドとは画面に文字列を表示するコマンドである.  
+また, `>`の後にファイル名を選択すると, 選択したファイルに文字列を書き込むことができる.
+
+```bash
+$ echo 文字列 > ファイル名
+```
+
+echoコマンドを使用し, .gitignoreファイルの中に`hoge.txt`と書き込む.
+
+```bash
 $ echo hoge.txt > .gitignore
 ```
 
-とすることで`$ git add .`を実行してもhoge.txtはステージングエリアにステージングされない.
+上記のようにすることで`$ git add .`を実行してもhoge.txtはステージングエリアにステージングされない.
 
-// git add .をしてもステージングされていないことを示す実行結果を載せる
+```bash
+$ git add .
+$ git status
+```
