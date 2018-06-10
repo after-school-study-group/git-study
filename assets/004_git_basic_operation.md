@@ -39,7 +39,7 @@ $ git init
 
 # 大まかな流れ
 
-<!-- 図 -->
+<img src="../img/004_git_basic_operation/001.png" width="600">
 
 Gitの管理下に置かれた実際に作業をしているディレクトリのことをワークツリーと呼ぶ.  
 ここでファイルの作成や編集, 削除を行った後, 必要なファイルをステージングエリア(インデックスとも呼ぶ)にステージングする作業を行う.  
@@ -47,7 +47,7 @@ Gitの管理下に置かれた実際に作業をしているディレクトリ�
 
 # ステージングする
 
-<!-- 図 -->
+<img src="../img/004_git_basic_operation/002.png" width="600">
 
 ステージングするにはまずなにかしらファイルを作成する必要があるため,
 
@@ -88,7 +88,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 # コミットする
 
-<!-- 図 -->
+<img src="../img/004_git_basic_operation/003.png" width="600">
 
 ステージングしたファイルはコミットと呼ばれる作業を行い, Gitの変更履歴に記録する必要がある.  
 コミットするには, `git commit`コマンドを使う.  
@@ -116,10 +116,11 @@ Date:   Tue May 22 18:53:08 2018 +0900
 閉じるときは`:q`と入力する.
 
 # ブランチとは
+
+<img src="../img/004_git_basic_operation/004.png" width="200">
+
 開発用とリリース用を分けたい場合など, 同じアプリケーションでも状況に応じて切り分けたい場合がある.  
 その問題を解決するのがGitにおけるブランチという概念である.  
-
-<!-- 図 -->
 
 まずは現在存在するブランチを確認する.  
 ブランチの一覧を表示するには`git branch`コマンドを使う.
@@ -128,6 +129,8 @@ Date:   Tue May 22 18:53:08 2018 +0900
 $ git branch
 * master
 ```
+
+<img src="../img/004_git_basic_operation/005.png" width="100">
 
 現在自分がいるブランチには左側に`*`(アスタリスク)が表示される.  
 また, デフォルトではmasterブランチしか無いため, 必要に応じてブランチを作る必要がある.
@@ -141,13 +144,13 @@ $ git branch test
 
 これにより, masterブランチからtestブランチが新たに分岐された.
 
-<!-- 分岐の図 -->
-
 ```bash
 $ git branch
 * master
   test
 ```
+
+<img src="../img/004_git_basic_operation/006.png" width="200">
 
 上図で`*`の位置がmasterになっていることから分かるように, testブランチで作業するにはmasterブランチからtestブランチに切り替える必要がある.  
 ブランチの切り替えには`git checkout`コマンドを使う.
