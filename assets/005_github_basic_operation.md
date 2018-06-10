@@ -13,10 +13,10 @@ GitHubで自分のページに移動し, "New"をクリックする.
 
 # ローカルリポジトリに追加
 
-まずはGitHubｂにて, リモートリポジトリのURLをコピーする.  
+まずはGitHubにて, リモートリポジトリのURLをコピーする.  
 リポジトリの画面の右側にある"Clone or download"を押し, コピーする.
 
-<img src="../img/005_github_basic_operation/029.png" width="600">
+<img src="../img/005_github_basic_operation/029.png" width="400">
 
 次に, ローカルリポジトリにリモートリポジトリを追加する.  
 これにより, 後述するpushやpullなどの作業を簡単に行えるようになる.
