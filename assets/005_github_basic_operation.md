@@ -193,21 +193,14 @@ $ touch hoge.txt
 $ touch .gitignore
 ```
 
-次に.gitignoreファイルに`hoge.txt`と書き込む. 書き込む時に`echo`コマンドを使用する.  
-`echo`コマンドとは画面に文字列を表示するコマンドである.  
-また, `>`の後にファイル名を選択すると, 選択したファイルに文字列を書き込むことができる.
-
-```bash
-$ echo 文字列 > ファイル名
-```
-
-echoコマンドを使用し, .gitignoreファイルの中に`hoge.txt`と書き込む.
+次に, `.gitignore`に`hoge.txt`と書き込む.
+echoコマンドと`>`の詳しい説明は省略するが, これで`.gitignore`に`hoge.txt`と書き込んでいる.
 
 ```bash
 $ echo hoge.txt > .gitignore
 ```
 
-上記のようにすることで`$ git add .`を実行してもhoge.txtはステージングエリアにステージングされない.
+上記のようにすることで, ステージングしても`hoge.txt`はステージングされないことが分かる.
 
 ```bash
 $ git add .
