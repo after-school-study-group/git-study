@@ -171,26 +171,26 @@ mergeはPull Requestの内容をリモートリポジトリに反映させるた
 
 クリック後, 適当なメッセージを入力して"Confirm merge"ボタンをクリックすると, mergeが完了する.
 
-<img src="../img/005_github_basic_operation/020.png" width="600">
+<img src="../img/005_github_basic_operation/019.png" width="600">
 
 また, mergeが完了すると, Pull Requestの状態が"Open"から"Merged"に変更され, 色調も緑色から紫色に変更される.
 
-<img src="../img/005_github_basic_operation/021.png" width="600">
+<img src="../img/005_github_basic_operation/020.png" width="600">
 
 # issueの作成
 issueは日本語で「問題」や「課題」を指す言葉で, プロジェクトで発生したバグや新機能・改善点等の要望をissueとして一元管理することでプロジェクトの見通しを良くするための機能である.
 
 新たにissueを作成する際は"New issue"をクリックする.
 
-<img src="../img/005_github_basic_operation/022.png" width="600">
+<img src="../img/005_github_basic_operation/021.png" width="600">
 
 そして, issueのタイトルとその説明を記述し, "Submit new issue"をクリックすることでissueが作成される.
 
-<img src="../img/005_github_basic_operation/023.png" width="600">
+<img src="../img/005_github_basic_operation/022.png" width="600">
 
 このとき, 右側にある"Assignees"からissueの担当者を割り当てることができたり, 同じく右側にある"Labels"からissueの分類をすることもできる.
 
-<img src="../img/005_github_basic_operation/024.png" width="600">
+<img src="../img/005_github_basic_operation/023.png" width="600">
 
 # .gitignore
 `.DS_Store`や`Thumbs.db`といったファイルシステムによって自動生成されるファイルや, `node_modules`のようなモジュール, `.vscode`や`.idea`のようなエディタが生成するファイルはGitの管理下に置く必要は無い.  
