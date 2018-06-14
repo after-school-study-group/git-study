@@ -112,11 +112,17 @@ forkが完了すると, リポジトリ名の下部に"forked from takashi0602/h
 
 # cloneする
 誰かがGitHub(など, インターネット上)に公開したリポジトリを自分のPCに複製(ダウンロード)することをGitではcloneと呼ぶ.  
-cloneするときは"Clone or Download"をクリックし, URLをコピーする.  
+cloneするときは"Clone or Download"をクリックし, URLをコピーする.このとき, URLはforkした際にできたリポジトリのURLである.
 
 <img src="../img/005_github_basic_operation/013.png" width="600">
 
-コピーしたら, ターミナルやGit Bashで以下のコマンドを入力する.
+また, cloneする場所はhello-gitディレクトリ内ではないので, `cd`コマンドを使用し一つ上の階層に移動する.
+
+```bash
+$ cd ..
+```
+
+移動できたら, ターミナルやGit Bashで以下のコマンドを入力する.
 
 ```bash
 $ git clone https://github.com/ユーザ名/hello-github.git
