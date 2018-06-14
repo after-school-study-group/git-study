@@ -169,7 +169,7 @@ mergeはPull Requestの内容をリモートリポジトリに反映させるた
 
 <img src="../img/005_github_basic_operation/018.png" width="600">
 
-クリック後,適当なメッセージを入力し, "Confirm merge"ボタンをクリックすると, mergeが完了する.
+クリック後, 適当なメッセージを入力して"Confirm merge"ボタンをクリックすると, mergeが完了する.
 
 <img src="../img/005_github_basic_operation/020.png" width="600">
 
