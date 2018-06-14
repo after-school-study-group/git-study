@@ -112,7 +112,8 @@ forkが完了すると, リポジトリ名の下部に"forked from takashi0602/h
 
 # cloneする
 誰かがGitHub(など, インターネット上)に公開したリポジトリを自分のPCに複製(ダウンロード)することをGitではcloneと呼ぶ.  
-cloneするときは"Clone or Download"をクリックし, URLをコピーする.このとき, URLはforkした際にできたリポジトリのURLである.
+GitHub上のリポジトリからローカルへcloneするときは"Clone or Download"をクリックし, URLをコピーする.  
+コピーするURLはfork元のリポジトリではなく, forkしたリポジトリであることに注意する.
 
 <img src="../img/005_github_basic_operation/013.png" width="600">
 
