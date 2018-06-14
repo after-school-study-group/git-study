@@ -165,13 +165,11 @@ GitHubに移動し, "Pull requests"タブを選択し, "New pull request"ボタ�
 mergeはPull Requestの内容をリモートリポジトリに反映させるために使用する機能である.
 
 まず, "Pull Requests"タブを選択肢, mergeしたいPull Requestを選択する.  
-そして, "Merge pull request"ボタンをクリックすると, そのPull Requestによるファイルの変更点などが表示される.
+そして, "Merge pull request"ボタンをクリックする.
 
 <img src="../img/005_github_basic_operation/018.png" width="600">
 
-<img src="../img/005_github_basic_operation/019.png" width="600">
-
-適当なメッセージを入力し, "Confirm merge"ボタンをクリックすると, mergeが完了する.
+クリック後, 適当なメッセージを入力して"Confirm merge"ボタンをクリックすると, mergeが完了する.
 
 <img src="../img/005_github_basic_operation/020.png" width="600">
 
