@@ -1,5 +1,5 @@
 # リポジトリの作成
-GitHubで自分のページに移動し, "New"をクリックする.
+GitHub上でマイページの"Repositories"タブに移動し, "New"をクリックする.
 
 <img src="../img/005_github_basic_operation/001.png" width="600">
 
@@ -14,15 +14,15 @@ GitHubで自分のページに移動し, "New"をクリックする.
 # ローカルリポジトリに追加
 
 まずはGitHubにて, リモートリポジトリのURLをコピーする.  
-リポジトリの画面の右側にある"Clone or download"を押し, コピーする.
+リポジトリの画面の右側にある"Clone or download"を押し, 表示されたURLをコピーする.
 
 <img src="../img/005_github_basic_operation/004.png" width="400">
 
 次に, ローカルリポジトリにリモートリポジトリを追加する.  
 これにより, 後述するpushやpullなどの作業を簡単に行えるようになる.
 
-ターミナルで下記のコマンドを実行すると, ローカルリポジトリに対してリモートリポジトリが"origin"という名前で登録される.  
-ちなみに, "origin"以外の名前を付けても良いが, 慣習的に"origin"と付けられることが多い.
+ターミナルで下記のコマンドを実行すると, ローカルリポジトリに対してリモートリポジトリが`origin`という名前で登録される.  
+ちなみに, `origin`以外の名前を付けても良いが, 慣習的に`origin`と付けられることが多い.
 
 ```bash
 $ git remote add origin <リモートリポジトリのURL>
@@ -61,7 +61,7 @@ GitHub上でリポジトリを確認すると, hello.txtが反映されている
 # pullする
 pullと呼ばれる操作を行うことで, リモートリポジトリでの変更内容ををローカルリポジトリに反映させることができる.
 
-基本的にGitHub上で作業することは無いが, 今回は擬似的にリモートリポジトリで変更があった状況を作り出すため, GitHub上で直接`hello.txt`の内容を変更する.
+基本的にGitHub上で作業することは無いが, 今回は擬似的にリモートリポジトリに変更があった状況を作り出すため, GitHub上で直接`hello.txt`の内容を変更する.
 
 `hello.txt`を開き, 画面右側にある鉛筆のアイコンを選択し, ファイルを編集する.
 
@@ -106,7 +106,7 @@ forkするユーザを選択する.
 
 <img src="../img/005_github_basic_operation/011.png" width="600">
 
-forkが完了すると左上に"forked from takashi0602/hello-github"とfork元リポジトリが記載される.
+forkが完了すると, リポジトリ名の下部に"forked from takashi0602/hello-github"とfork元リポジトリが記載される.
 
 <img src="../img/005_github_basic_operation/012.png" width="600">
 
@@ -116,7 +116,7 @@ cloneするときは"Clone or Download"をクリックし, URLをコピーする
 
 <img src="../img/005_github_basic_operation/013.png" width="600">
 
-コピーしたら, ターミナルやGitBashで以下のコマンドを入力する.
+コピーしたら, ターミナルやGit Bashで以下のコマンドを入力する.
 
 ```bash
 $ git clone https://github.com/ユーザ名/hello-github.git
@@ -157,7 +157,7 @@ GitHubに移動し, "Pull requests"タブを選択し, "New pull request"ボタ�
 
 <img src="../img/005_github_basic_operation/016.png" width="600">
 
-そうすると,pull requestが作成される.
+そうすると, pull requestが作成される.
 
 <img src="../img/005_github_basic_operation/017.png" width="600">
 
@@ -195,10 +195,10 @@ issueは日本語で「問題」や「課題」を指す言葉で, プロジェ�
 <img src="../img/005_github_basic_operation/024.png" width="600">
 
 # .gitignore
-`.DS_Store`や`Thumbs.db`といったファイルシステムによって自動生成されるファイルや, `node_modules`のようなモジュール, `.vscode`や`.idea`のようなエディタが生成するファイルはGitの監視下に置く必要は無い.  
-そのようなファイルやディレクトリを.gitignoreに記述することで, Gitの監視下から除外される.
+`.DS_Store`や`Thumbs.db`といったファイルシステムによって自動生成されるファイルや, `node_modules`のようなモジュール, `.vscode`や`.idea`のようなエディタが生成するファイルはGitの管理下に置く必要は無い.  
+そのようなファイルやディレクトリを.gitignoreに記述することで, Gitの監視下から除外することができる.
 
-例えば, hoge.txtをGitの監視下から除外したい場合, まず.gitignoreファイルを作成する.
+例えば, hoge.txtをGitの管理下から除外したい場合, まず.gitignoreファイルを作成する.
 
 ```bash
 $ touch hoge.txt

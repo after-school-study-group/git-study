@@ -21,7 +21,7 @@ https://git-scm.com/download/win からダウンロードし, インストール
 Debian系ならapt, Red Hat系ならyumでインストールする.  
 詳しくは https://git-scm.com/download/linux を参照.
 
-# Gitがインストールされているかを確認
+### Gitがインストールされているかを確認
 
 macOSならターミナル, WindowsならGit Bash, Linux/UNIXなら端末を開き, `git --version` と入力する.
 
