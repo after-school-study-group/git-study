@@ -42,7 +42,7 @@ origin https://github.com/takashi0602/hello-git.git (push)
 # pushする
 pushと呼ばれる操作を行うことで, ローカルリポジトリの変更内容をリモートリポジトリに反映させることができる.  
 先程作成した`hello.txt`はコミットまでされているので, 次はこれをpushする.  
-pushする際は`git push`の後にリモートリポジトリのURLが登録されている名前(`git remote add`で登録した名前)の`origin`, リモートリポジトリのブランチ名`master`を入力する.
+pushする際は`git push`の後に続けてリモートリポジトリの名前(今回は`origin`), push先ブランチ名(今回は`master`)を入力する.
 
 ```bash
 $ git push origin master
