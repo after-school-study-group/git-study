@@ -41,7 +41,8 @@ origin https://github.com/takashi0602/hello-git.git (push)
 
 # pushする
 pushと呼ばれる操作を行うことで, ローカルリポジトリの変更内容をリモートリポジトリに反映させることができる.  
-先程作成した`hello.txt`はコミットまでされているので, 次はこれをpushする.
+先程作成した`hello.txt`はコミットまでされているので, 次はこれをpushする.  
+pushする際は`git push`の後に続けてリモートリポジトリの名前(今回は`origin`), push先ブランチ名(今回は`master`)を入力する.
 
 ```bash
 $ git push origin master
@@ -112,12 +113,12 @@ forkが完了すると, リポジトリ名の下部に"forked from takashi0602/h
 
 # cloneする
 誰かがGitHub(など, インターネット上)に公開したリポジトリを自分のPCに複製(ダウンロード)することをGitではcloneと呼ぶ.  
-GitHub上のリポジトリからローカルへcloneするときは"Clone or Download"をクリックし, URLをコピーする.  
-コピーするURLはfork元のリポジトリではなく, forkしたリポジトリであることに注意する.
+cloneするときは"Clone or Download"をクリックし, URLをコピーする.  
 
 <img src="../img/005_github_basic_operation/013.png" width="600">
 
-また, cloneする場所はhello-gitディレクトリ内ではないので, `cd`コマンドを使用し一つ上の階層に移動する.
+また, cloneする場所はhello-git内ではないので, `cd`コマンドを使用し一つ上の階層に移動する.  
+移動できたら, ターミナルやGit Bashで以下のコマンドを入力する.
 
 ```bash
 $ cd ..
