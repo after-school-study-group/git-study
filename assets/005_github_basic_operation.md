@@ -117,8 +117,7 @@ cloneするときは"Clone or Download"をクリックし, URLをコピーする
 
 <img src="../img/005_github_basic_operation/013.png" width="600">
 
-また, cloneする場所はhello-git内ではないので, `cd`コマンドを使用し一つ上の階層に移動する.  
-移動できたら, ターミナルやGit Bashで以下のコマンドを入力する.
+また, cloneする場所はhello-git内ではないので, `cd`コマンドを使用して一つ上の階層に移動する.  
 
 ```bash
 $ cd ..
