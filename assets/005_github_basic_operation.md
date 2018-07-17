@@ -14,7 +14,7 @@ GitHub上でマイページの"Repositories"タブに移動し, "New"をクリ�
 # ローカルリポジトリに追加
 
 まずはGitHubにて, リモートリポジトリのURLをコピーする.  
-リポジトリの画面の右側にある"Clone or download"を押し, 表示されたURLをコピーする.
+リポジトリの画面の右側にあるアイコンを押し, 表示さているURLをコピーする.
 
 <img src="../img/005_github_basic_operation/004.png" width="400">
 
