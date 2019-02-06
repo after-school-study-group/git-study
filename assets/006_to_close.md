@@ -15,14 +15,16 @@ Gitの良さは実際にアプリケーションを開発して初めて分か�
 - git cherry-pick
 - git rebase
 
-# Git/GitHubを勉強できるサイトの紹介
+# Git/GitHubを勉強できるサイト・書籍の紹介
 
 ### 初級者向け
 - [Progate](https://prog-8.com/languages/git)
 - [ドットインストール](https://dotinstall.com/lessons/basic_git)
+- [わかばちゃんと学ぶ Git使い方入門](https://www.amazon.co.jp/dp/4863542178)
 
 ### 中級者向け
 - [サルでもわかるGit入門](https://backlog.com/ja/git-tutorial/)
+- [入門git](https://www.amazon.co.jp/dp/427406767X)
 
 ### 上級者向け
 - [Pro Git](https://progit-ja.github.io/)
