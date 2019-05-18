@@ -5,3 +5,7 @@ build:
 	git add .
 	git commit -m "Build to GitHub"
 	git push origin master
+
+pdf:
+	gitbook pdf
+	mv book.pdf git-study.pdf
