@@ -17,7 +17,7 @@ Gitの良さは実際にアプリケーションを開発して初めて分か�
 - git stash
 - git tag
 
-# Git/GitHubを勉強できるサイト・書籍の紹介
+# Git/GitHubを勉強できるWebサイト・書籍の紹介
 
 ### 初級者向け
 - [Progate](https://prog-8.com/languages/git)
@@ -31,7 +31,7 @@ Gitの良さは実際にアプリケーションを開発して初めて分か�
 ### 上級者向け
 - [Pro Git](https://progit-ja.github.io/)
 
-### Git/GitHub関連のアプリケーション
+# Git/GitHub関連のアプリケーションの紹介
 
 <img src="../img/06_closing/001.png" width="300">
 
