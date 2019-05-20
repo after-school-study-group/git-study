@@ -1,13 +1,13 @@
 # Gitとは
 
-<img src="../img/001_what_is_git_github/001.png" width="200">
+<img src="../img/01_what_is_git_github/001.png" width="200">
 
 **Git**はソースコードをリポジトリと呼ばれる１つのまとまりとして変更履歴を記録・追跡できる**分散型バージョン管理システム**である.  
 元々はLinuxカーネルのソースコードを管理するためにリーナス・トーバルズによって開発された.
 
 ### Gitを使わずに開発するとどうなるか
 
-<img src="../img/001_what_is_git_github/002.png" width="600">
+<img src="../img/01_what_is_git_github/002.png" width="600">
 
 Gitなどのバージョン管理システムを使わずに開発すると, 主に以下のような問題が発生する.
 
@@ -20,15 +20,15 @@ Gitなどのバージョン管理システムを使わずに開発すると, 主
 ### Gitが生まれる以前の話
 Gitが生まれる以前は**CVS**や**Subversion**をはじめとするバージョン管理システムが使用されていたが, これらのツールはいずれも「**集中型バージョン管理**」という方式を取っていたため, リポジトリが置かれたサーバに接続できない環境では最新のソースコードを取得やファイル編集の反映ができないなど様々な問題が生じた.
 
-<img src="../img/001_what_is_git_github/003.png" width="300">
+<img src="../img/01_what_is_git_github/003.png" width="300">
 
 Gitはこれを解決するために「**分散型バージョン管理**」という方式を取り, それらの欠点を克服した.  
 
-<img src="../img/001_what_is_git_github/004.png" width="400">
+<img src="../img/01_what_is_git_github/004.png" width="400">
 
 # GitHubとは
 
-<img src="../img/001_what_is_git_github/005.png" width="400">
+<img src="../img/01_what_is_git_github/005.png" width="400">
 
 **GitHub**はGitのリポジトリをホスティングするためのサービスである.  
 つまり, 自分がローカル環境で作ったGitリポジトリを簡単にインターネット上で公開したり, 他人と共有したりできるサービスである.  
@@ -37,7 +37,7 @@ Gitはこれを解決するために「**分散型バージョン管理**」と�
 
 # Git/GitHubのおおまかなイメージ
 
-<img src="../img/001_what_is_git_github/006.png" width="500">
+<img src="../img/01_what_is_git_github/006.png" width="500">
 
 上図のそれぞれのリポジトリは,
 
