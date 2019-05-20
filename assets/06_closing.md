@@ -44,3 +44,7 @@ Gitの良さは実際にアプリケーションを開発して初めて分か�
 <img src="../img/06_closing/003.png" width="100">
 
 - [Sourcegraph](https://sourcegraph.com/welcome) ... WebブラウザのGitHub上でソースコードを見る場合に, 分かりやすく表示してくれるブラウザ拡張.
+
+<img src="../img/06_closing/004.png" width="100">
+
+- [Isometric Contributions](https://chrome.google.com/webstore/detail/isometric-contributions/mjoedlfflcchnleknnceiplgaeoegien) ... GitHubのコントリビューションを立体的に表示するChrome拡張.
