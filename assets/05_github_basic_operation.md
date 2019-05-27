@@ -94,30 +94,30 @@ Fast-forward
 ```
 
 # forkする
-誰かがGitHub上に公開しているリポジトリを自分のGitHub上に複製することをforkと呼ぶ.
+誰かがGitHub上に公開しているリポジトリを自分のGitHubのアカウントに複製することをforkと呼ぶ.
 
-今回は[hello-github](https://github.com/takashi0602/hello-github)をforkする.  
+今回は[recipe](https://github.com/yuka0719/recipe)をforkする.  
 右上にある"Fork"ボタンをクリックする.
 
 <img src="../img/05_github_basic_operation/009.png" width="300">
 
-forkするユーザを選択する.
+そして, forkするユーザを選択する.
 
 <img src="../img/05_github_basic_operation/010.png" width="600">
 
 <img src="../img/05_github_basic_operation/011.png" width="600">
 
-forkが完了すると, リポジトリ名の下部に"forked from takashi0602/hello-github"とfork元リポジトリが記載される.
+forkが完了すると, リポジトリ名の下部に"forked from yuka0719/recipe"とfork元リポジトリが記載される.
 
 <img src="../img/05_github_basic_operation/012.png" width="600">
 
 # cloneする
-誰かがGitHub(など, インターネット上)に公開したリポジトリを自分のPCに複製(ダウンロード)することをGitではcloneと呼ぶ.  
+誰かがGitHub(など, インターネット上)に公開したリポジトリを自分のPC内に複製(ダウンロード)することをGitではcloneと呼ぶ.  
 cloneするときは"Clone or Download"をクリックし, URLをコピーする.  
 
 <img src="../img/05_github_basic_operation/013.png" width="600">
 
-また, cloneする場所はhello-git内ではないので, `cd`コマンドを使用して一つ上の階層に移動する.  
+また, cloneする場所はrecipe内ではないので, `cd`コマンドを使用して一つ上の階層に移動する.  
 
 ```bash
 $ cd ..
@@ -126,7 +126,7 @@ $ cd ..
 移動できたら, ターミナルやGit Bashで以下のコマンドを入力する.
 
 ```bash
-$ git clone https://github.com/ユーザ名/hello-github.git
+$ git clone https://github.com/ユーザ名/recipe.git
 ```
 
 これでcloneが完了した.
@@ -138,16 +138,16 @@ Pull Requestは自分のローカルリポジトリでの変更をコミット�
 まずは先程cloneしたリポジトリに移動する.
 
 ```bash
-$ cd hello-github
+$ cd recipe
 ```
 
-コミットするにはリポジトリに変更を加える必要があるため, 今回は`学籍番号.txt`(例: `B7233.txt`)という名前のファイルを作成する.  
+コミットするにはリポジトリに変更を加える必要があるため, 今回は`<好きな料理の名前>_recipe.txt`(例: `tkg_recipe.txt`)という名前のファイルを作成する.  
 その後, ステージングとコミットを行い, pushする.
 
 ```bash
-$ touch B7233.txt
+$ touch tkg_recipe.txt
 $ git add .
-$ git commit -m "add B7233.txt"
+$ git commit -m "add tkg_recipe.txt"
 $ git push origin master
 ```
 
@@ -164,7 +164,7 @@ GitHubに移動し, "Pull requests"タブを選択し, "New pull request"ボタ�
 
 <img src="../img/05_github_basic_operation/016.png" width="600">
 
-そうすると, pull requestが作成される.
+そうすると, Pull Requestが作成される.
 
 <img src="../img/05_github_basic_operation/017.png" width="600">
 
