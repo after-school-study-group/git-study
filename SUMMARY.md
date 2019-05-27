@@ -1,6 +1,6 @@
 # Index
 
-* [Introduction](README.md)
+* [README](README.md)
 * [0. はじめに](./assets/00_opening.md)
 * [1. Git/GitHubとは](./assets/01_what_is_git_github.md)
 * [2. GitHubの登録](./assets/02_register_github.md)
