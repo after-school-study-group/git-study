@@ -200,7 +200,7 @@ issueは日本語で「問題」や「課題」を指す言葉で, プロジェ�
 <img src="../img/05_github_basic_operation/023.png" width="600">
 
 # .gitignore
-`.DS_Store`や`Thumbs.db`といったファイルシステムによって自動生成されるファイルや, `node_modules`のようなモジュール, `.vscode`や`.idea`のようなエディタが生成するファイルはGitの管理下に置く必要は無い.  
+`.DS_Store`や`Thumbs.db`といったファイルシステムによって自動生成されるファイルや, npmが生成する`node_modules`やComposerが生成する`vendor`のようなモジュール群, `.vscode`や`.idea`のようなエディタが生成するファイルはGitの管理下に置く必要は無い.  
 そのようなファイルやディレクトリを.gitignoreに記述することで, Gitの監視下から除外することができる.
 
 例えば, hoge.txtをGitの管理下から除外したい場合, まず.gitignoreファイルを作成する.
@@ -223,3 +223,9 @@ $ echo hoge.txt > .gitignore
 $ git add .
 $ git status
 ```
+
+# コントリビューション
+GitHubでは「pushする」「PRを送る」「mergeする」「issueを立てる」などの作業を行う度にコントリビューションに反映される.  
+コントリビューションというのは, 以下の画像のように, 「何年何月何日にどれだけ稼働したか」という情報の可視化であり, これによりモチベーションが上がる(人もいる).
+
+<img src="../img/05_github_basic_operation/024.png" width="600">
