@@ -32,8 +32,8 @@ $ git remote add origin <リモートリポジトリのURL>
 
 ```bash
 $ git remote -v
-origin https://github.com/takashi0602/hello-git.git (fetch)
-origin https://github.com/takashi0602/hello-git.git (push)
+origin https://github.com/<ユーザ名>/hello-git.git (fetch)
+origin https://github.com/<ユーザ名>/hello-git.git (push)
 ```
 
 とコマンドを入力し, 実行する.  
@@ -49,7 +49,7 @@ $ git push origin master
 Counting objects: 3, done.
 Writing objects: 100% (3/3), 244 bytes | 244.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/takashi0602/hello-git.git
+To https://github.com/aska0720/hello-git.git
    9678fb4..52e8275  master -> master
 ```
 
@@ -60,7 +60,7 @@ GitHub上でリポジトリを確認すると, hello.txtが反映されている
 <img src="../img/05_github_basic_operation/005.png" width="600">
 
 # pullする
-pullと呼ばれる操作を行うことで, リモートリポジトリでの変更内容ををローカルリポジトリに反映させることができる.
+pullと呼ばれる操作を行うことで, リモートリポジトリでの変更内容をローカルリポジトリに反映させることができる.
 
 基本的にGitHub上で作業することは無いが, 今回は擬似的にリモートリポジトリに変更があった状況を作り出すため, GitHub上で直接`hello.txt`の内容を変更する.
 
@@ -84,7 +84,7 @@ $ git pull origin master
 remote: Counting objects: 3, done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
-From https://github.com/takashi0602/hello-git
+From https://github.com/aska0720/hello-git
  * branch            master     -> FETCH_HEAD
    52e8275..4acdde3  master     -> origin/master
 Updating 52e8275..4acdde3
@@ -101,7 +101,9 @@ Fast-forward
 
 <img src="../img/05_github_basic_operation/009.png" width="300">
 
-そして, forkするユーザを選択する.
+そして, forkするユーザを選択する.  
+ちなみに, Organizations(組織)に所属している場合は以下の選択画面が表示される.  
+その場合, ユーザを選択するとforkが開始される.
 
 <img src="../img/05_github_basic_operation/010.png" width="600">
 
@@ -126,7 +128,7 @@ $ cd ..
 移動できたら, ターミナルやGit Bashで以下のコマンドを入力する.
 
 ```bash
-$ git clone https://github.com/ユーザ名/recipe.git
+$ git clone https://github.com/<ユーザ名>/recipe.git
 ```
 
 これでcloneが完了した.

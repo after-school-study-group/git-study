@@ -100,7 +100,7 @@ $ git commit -m "Initial commit"
 ```bash
 $ git log
 commit 23bbb672088c1eeaeb1a4c48e81256812edf02e7 (HEAD -> master)
-Author: Kazuki Tobita <kazukiti201@gmail.com>
+Author: Aska Yukawa <aska0720@gmail.com>
 Date:   Tue May 22 18:53:08 2018 +0900
 
     Initial commit
