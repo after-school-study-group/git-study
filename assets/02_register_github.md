@@ -5,7 +5,7 @@
 
 <img src="../img/02_register_github/001.png" width="600">
 
-ユーザ名, メールアドレス, パスワードを入力し, Verify account欄でアカウントが正しいことを検証し, "Create an account"をクリックする.
+ユーザ名, メールアドレス, パスワードを入力し, "Verify account"でアカウントが正しいことを検証し, "Create an account"をクリックする.
 
 <img src="../img/02_register_github/002.png" width="600">
 
@@ -15,7 +15,7 @@
 
 <img src="../img/02_register_github/003.png" width="600">
 
-最後に, アンケートに答えることができる. "skip this step"をクリックし, アンケートをスキップすることも可能.
+最後に, アンケートに答えることができるが, "skip this step"をクリックするとアンケートをスキップすることも可能である.
 
 <img src="../img/02_register_github/004.png" width="600">
 
