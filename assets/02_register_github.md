@@ -5,16 +5,20 @@
 
 <img src="../img/02_register_github/001.png" width="600">
 
-ユーザ名, メールアドレス, パスワードを入力し, "Create an account"をクリックする.
+ユーザ名, メールアドレス, パスワードを入力し, Verify account欄でアカウントが正しいことを検証し, "Create an account"をクリックする.
 
 <img src="../img/02_register_github/002.png" width="600">
 
-次に, "Unlimited public repositories for free."(フリープラン)にチェックを入れ, "Continue"をクリックする.  
+次に, "Free"(フリープラン)にチェックを入れ, "Continue"をクリックする.  
 ちなみに, プライベートリポジトリを無制限に作成できる学生プランも用意されているので, 学生の間に[GitHub Education](https://education.github.com/)で申請を行っておくと良い.  
 プライベートリポジトリとは, 限られたメンバーのみが閲覧可能なリポジトリのことで, 外部に公開される通常のリポジトリはパブリックリポジトリ(または単にリポジトリ)と呼ばれる.
 
 <img src="../img/02_register_github/003.png" width="600">
 
-アカウントの作成に成功すると以下のようなページが表示される.
+最後に, アンケートに答えることができる. "skip this step"をクリックし, アンケートをスキップすることも可能.
 
 <img src="../img/02_register_github/004.png" width="600">
+
+アカウントの作成に成功すると以下のようなページが表示される.
+
+<img src="../img/02_register_github/005.png" width="600">
