@@ -19,7 +19,7 @@
 
 <img src="../img/02_register_github/004.png" width="600">
 
-最後に, 登録したメールアドレスに, GitHubからメールが届くので, "Verify email address"をクリックする.
+最後に, 登録したメールアドレスにGitHubからメールが届くので, メールを開いて"Verify email address"をクリックする.
 
 <img src="../img/02_register_github/005.png" width="600">
 
