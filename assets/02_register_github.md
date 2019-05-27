@@ -15,10 +15,14 @@
 
 <img src="../img/02_register_github/003.png" width="600">
 
-最後に, アンケートに答えることができるが, "skip this step"をクリックするとアンケートをスキップすることも可能である.
+次に, アンケートに答えることができるが, "skip this step"をクリックするとアンケートをスキップすることも可能である.
 
 <img src="../img/02_register_github/004.png" width="600">
 
-アカウントの作成に成功すると以下のようなページが表示される.
+最後に, 登録したメールアドレスに, GitHubからメールが届くので, "Verify email address"をクリックする.
 
 <img src="../img/02_register_github/005.png" width="600">
+
+アカウントの作成に成功すると以下のようなページが表示される.
+
+<img src="../img/02_register_github/006.png" width="600">
