@@ -78,7 +78,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-ステージングされているファイルは'No commits yet'の下に, ステージングされていないファイルは'Untracked files'の下に表示される.
+ステージングされているファイルは'Changes to be committed'の下に, ステージングされていないファイルは'Untracked files'の下に表示される.
 
 # コミットする
 
