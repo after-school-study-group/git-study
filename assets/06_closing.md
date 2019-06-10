@@ -37,14 +37,18 @@ Gitの良さは実際にアプリケーションを開発して初めて分か�
 
 - [Sourcetree](https://ja.atlassian.com/software/sourcetree) ... GitをGUIで操作するためのアプリケーション. しかし, 慣れてしまえばCUIの方が使い勝手が良いように感じる.
 
-<img src="../img/06_closing/002.png" width="100">
+<img src="../img/06_closing/002.png" width="100"> ... こちらもGitをGUIで操作するためのアプリケーション.
 
-- [GitHub Desktop](https://desktop.github.com/) ... Webブラウザ上でも不自由なくGitHubを操作できるが, GitHubのデスクトップアプリケーション.
+- [GitKraken](https://www.gitkraken.com/)
 
 <img src="../img/06_closing/003.png" width="100">
 
-- [Sourcegraph](https://sourcegraph.com/welcome) ... WebブラウザのGitHub上でソースコードを見る場合に, 分かりやすく表示してくれるブラウザ拡張.
+- [GitHub Desktop](https://desktop.github.com/) ... Webブラウザ上でも不自由なくGitHubを操作できるが, GitHubのデスクトップアプリケーション.
 
 <img src="../img/06_closing/004.png" width="100">
+
+- [Sourcegraph](https://sourcegraph.com/welcome) ... WebブラウザのGitHub上でソースコードを見る場合に, 分かりやすく表示してくれるブラウザ拡張.
+
+<img src="../img/06_closing/005.png" width="100">
 
 - [Isometric Contributions](https://chrome.google.com/webstore/detail/isometric-contributions/mjoedlfflcchnleknnceiplgaeoegien) ... GitHubのコントリビューションを立体的に表示するChrome拡張.
