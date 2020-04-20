@@ -18,7 +18,7 @@
 
 ### たかし(高橋秀明)
 
-<img src="../img/00_opening/takashi.jpg" width="100">
+<img src="../img/00_opening/takashi.png" width="100">
 
 大阪情報コンピュータ専門学校 総合情報メディア学科 ネットワークセキュリティ専攻 ３年.  
 CSSアニメーションとフロントエンドが好き.  
